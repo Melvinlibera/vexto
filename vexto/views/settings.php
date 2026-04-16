@@ -287,7 +287,7 @@ $userAvatar = !empty($user_data['foto_perfil']) ? 'data:' . $user_data['foto_per
                             <option value="custom">Personalizado</option>
                         </select>
                     </div>
-
+                    
                     <div id="customPlanWrapper" class="filter-group" style="display: none;">
                         <label>Cantidad personalizada</label>
                         <input type="number" name="custom_max_publicaciones" id="customMaxPublicaciones" placeholder="Ej: 30">
@@ -313,16 +313,7 @@ $userAvatar = !empty($user_data['foto_perfil']) ? 'data:' . $user_data['foto_per
                             <?php endif; ?>
                         </div>
                     </div>
-
-                    <div id="planCost" style="text-align: center; font-weight: 900; font-size: 1.4rem; margin-bottom: 25px; color: var(--accent-color);">
-                        $0.00
-                    </div>
-
-                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; border-radius: 14px; font-weight: 800;">Actualizar Plan</button>
-                </form>
-            </div>
-
-            <div class="filter-card info-section" style="border-radius: 28px; padding: 40px;">
+                    <div class="filter-card info-section" style="border-radius: 28px; padding: 40px;">
                 <h2 style="font-weight: 900; margin-bottom: 15px; font-size: 1.3rem;">Estado de la Cuenta</h2>
                 <div style="display: flex; flex-direction: column; gap: 15px;">
                     <div style="display: flex; justify-content: space-between; font-size: 0.95rem;">
@@ -338,6 +329,13 @@ $userAvatar = !empty($user_data['foto_perfil']) ? 'data:' . $user_data['foto_per
                         <span style="font-weight: 800;">#<?php echo $user_data['id']; ?></span>
                     </div>
                 </div>
+            </div>
+                    <div id="planCost" style="text-align: center; font-weight: 900; font-size: 1.4rem; margin-bottom: 25px; color: var(--accent-color);">
+                        $0.00
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; border-radius: 14px; font-weight: 800;">Actualizar Plan</button>
+                </form>
             </div>
         </div>
     </div>
